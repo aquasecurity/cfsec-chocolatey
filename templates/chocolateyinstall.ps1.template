@@ -1,0 +1,10 @@
+$ErrorActionPreference = 'Stop'
+
+$packageName = 'cfsec'
+$checksum = '{PLACEHOLDER_SHA}'
+$toolsPath = Split-Path $MyInvocation.MyCommand.Definition
+$version = 'v{PLACEHOLDER_VERSION}'
+$url = "https://github.com/aquasecurity/cfsec/releases/download/$version/cfsec-windows-amd64.exe"
+$destination = "$toolsPath\cfsec.exe"
+
+Get-ChocolateyWebFile -PackageName $packageName -FileFullPath $destination -Url64bit $url -Checksum64 $checksum -ChecksumType64 sha256

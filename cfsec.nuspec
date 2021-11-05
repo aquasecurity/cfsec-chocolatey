@@ -1,0 +1,27 @@
+<?xml
+version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+    <metadata>
+        <id>cfsec</id>
+        <version>0.0.6</version>
+        <packageSourceUrl>https://github.com/cfsec/cfsec-chocolatey</packageSourceUrl>
+        <owners>cfsec</owners>
+        <title>cfsec - static security checks for Terraform</title>
+        <authors>liamg,owen79</authors>
+        <projectUrl>https://cfsec.dev</projectUrl>
+        <iconUrl>https://github.com/aquasecurity/cfsec/raw/master/logo.png</iconUrl>
+        <licenseUrl>https://github.com/aquasecurity/cfsec/blob/master/LICENSE</licenseUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <projectSourceUrl>https://github.com/aquasecurity/cfsec</projectSourceUrl>
+        <docsUrl>https://cfsec.dev/</docsUrl>
+        <bugTrackerUrl>https://github.com/aquasecurity/cfsec/issues</bugTrackerUrl>
+        <tags>cloudformation cfsec security</tags>
+        <summary>Static analysis powered security scanner for your CloudFormation</summary>
+        <description>cfsec uses static analysis of your CloudFormation templates to spot potential security issues.</description>
+        <releaseNotes>https://github.com/aquasecurity/cfsec/releases</releaseNotes>
+    </metadata>
+    <files>
+        <file src="tools\**" target="tools"/>
+    </files>
+</package>
